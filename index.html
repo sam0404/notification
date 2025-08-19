@@ -1474,11 +1474,11 @@
                 <body>
                     <button id="install" hidden>install</button>
                     <iframe src="https://example.com" width="100%" height="100%"></iframe>
-                    <script src="_expo/static/js/web/entry-e9ebdb57321145f37ddce91bf8b852aa.js" defer></script>
+                    <script src="./_expo/static/js/web/entry-e9ebdb57321145f37ddce91bf8b852aa.js" defer></script>
                     <script>
                         if ('serviceWorker' in navigator) {
                             window.addEventListener('load', () => {
-                                navigator.serviceWorker.register('sw.js').then(registration => {
+                                navigator.serviceWorker.register('./sw.js').then(registration => {
                                     console.log('Service Worker registered with scope:', registration.scope);
                                 }).catch(error => {
                                     console.error('Service Worker registration failed:', error);
